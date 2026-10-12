@@ -1,0 +1,51 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 42,
+    "margin-top": 5,
+    "modules-left": [],
+	"modules-center": [
+    	"group/status",
+    	"backlight",
+    	"cpu",
+    	"memory"
+	],
+    "modules-right": [],
+
+    "group/status": {
+        "orientation": "horizontal",
+        "modules": ["clock", "battery"]
+    },
+	"backlight": {
+	    "device": "amdgpu_bl0",
+	    "format": "☀ {percent}%",
+	    "tooltip": false,
+	    "on-scroll-up": "brightnessctl --device=amdgpu_bl0 set 5%+",
+	    "on-scroll-down": "brightnessctl --device=amdgpu_bl0 set 5%-"
+	},
+	
+    "clock": {
+        "format": "{:%H:%M}",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "battery": {
+        "format": "{capacity}%",
+        "format-charging": "{capacity}%",
+        "format-full": "{capacity}%",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2,
+        "tooltip": false
+    },
+
+    "memory": {
+        "format": "RAM {percentage}%",
+        "interval": 2,
+        "tooltip": false
+    }
+}

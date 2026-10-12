@@ -1,0 +1,17 @@
+width=720
+height=520
+show=drun
+
+prompt=
+
+allow_images=true
+image_size=24
+
+term=kitty
+
+hide_scroll=true
+normal_window=true
+location=center
+no_actions=true
+
+style=~/.config/wofi/style.css

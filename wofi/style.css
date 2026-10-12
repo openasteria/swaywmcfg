@@ -1,0 +1,64 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "Inter";
+    font-size: 14px;
+}
+
+window {
+    margin: 0;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 5px;
+
+    background-color: rgba(28, 30, 32, 0.72);
+
+    /* если wofi собран с поддержкой gtk4 */
+    backdrop-filter: blur(20px);
+}
+
+#outer-box {
+    margin: 0;
+    padding: 10px;
+}
+
+#input {
+    margin-bottom: 10px;
+    padding: 10px 14px;
+
+    color: #e8e8e8;
+    background-color: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+}
+
+#input image {
+    color: #cfcfcf;
+}
+
+#scroll {
+    margin: 0;
+}
+
+#inner-box {
+    margin: 0;
+}
+
+#entry {
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #d9d9d9;
+    background: transparent;
+}
+
+#entry:selected {
+    background-color: rgba(255,255,255,0.10);
+    color: #ffffff;
+}
+
+#img {
+    margin-right: 10px;
+}
+
+#text {
+    color: inherit;
+}
